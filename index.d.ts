@@ -262,13 +262,13 @@ declare module "react-native-image-crop-picker" {
          */
         cropperChooseText?: string;
 
-         /**
-         * Enable or disable cropper rotate buttons.
-         *
-         * @platform iOS only
-         * @default false
-         */
-          cropperRotateButtonsHidden?: boolean
+        /**
+        * Enable or disable cropper rotate buttons.
+        *
+        * @platform iOS only
+        * @default false
+        */
+        cropperRotateButtonsHidden?: boolean
 
         /**
          * Whether to show the 3x3 grid on top of the image during cropping.
@@ -324,6 +324,14 @@ declare module "react-native-image-crop-picker" {
          * @default Android: 1, iOS: 0.8
          */
         compressImageQuality?: number;
+
+        /**
+         * When cropping image, uses the dimensions of the cropRect for the resulting image.
+         *
+         * @platform iOS only
+         * @default false
+         */
+        useCroppedDimensions?: boolean;
     }
 
     type CropperOptions = ImageOptions & {
